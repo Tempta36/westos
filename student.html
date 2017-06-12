@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>西部开源|学生入口</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="frames/jquery/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" href="frames/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/student.css"/>
+    <script src="js/student.js"></script>
+</head>
+<body class="container-fluid student" style="padding:0;">
+<div class="row top1">
+    <div class="col-lg-2 hidden-md hidden-sm"></div>
+    <div class="col-lg-8 col-sm-12">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 top1_left">
+                <img src="images/phone.png" alt=""/>
+                客服热线：4000-000-000&nbsp;|&nbsp;
+                <a href="#">关注我们</a>
+                <img src="images/weibo.png" alt=""/>
+                <img src="images/weixin.png" alt=""/>
+            </div>
+            <div class="col-md-6 col-sm-6 top1_right">
+                您好！欢迎来到西部开源技术中心&nbsp;|&nbsp;
+                <a href="#">帮助中心</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 hidden-md hidden-sm"></div>
+</div>
+<div class="row top2">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <img src="images/stu-top2.jpg" alt=""/>
+    </div>
+</div>
+<div class="row nav">
+    <div class="col-lg-2 hidden-md hidden-sm"></div>
+    <div class="col-lg-8 col-md-12 col-sm-12 ">
+        <ul class="nav_ul1">
+            <li style="background-image: url('images/xxk1.png');background-size:cover;background-position: center"><a href="">首页</a></li>
+            <li class="nav_ul1_li"><a href="./aboutUs.html">关于开源</a></li>
+            <li class="nav_ul1_li"><a href="./eduTrain.html">教育培训</a></li>
+            <li class="nav_ul1_li"><a href="#">学习视频</a></li>
+            <li class="nav_ul1_li"><a href="#">就业招聘</a></li>
+            <li class="nav_ul1_li"><a href="#">考务系统</a></li>
+            <li class="nav_ul1_li" style="width:18%;"><a href="./techSupport.html">企业技术支持</a></li>
+            <li class="nav_ul1_li"><a href="./connectUs.html">联系我们</a></li>
+        </ul>
+        <ul class="nav_ul2">
+            <li>
+                <input type="text" id="search_text"/>
+            </li>
+            <li>
+                <input type="button" id="search_btn" value="GO"/>
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-2 hidden-md hidden-sm"></div>
+</div>
+<div class="row index">
+    <div class="col-md-12 col-sm-12 loop">
+        <div id="index_loop_left"></div>
+        <ul>
+            <li><img src="images/main1.gif" alt=""/></li>
+            <li><img src="images/main1.gif" alt=""/></li>
+            <li><img src="images/main1.gif"  alt=""/></li>
+        </ul>
+        <div id="index_loop_right"></div>
+    </div>
+</div>
+<div class="row logIn">
+    <div class=" col-lg-2 hidden-md hidden-sm"></div>
+    <div class="col-md-12 col-sm-12">
+        <div class="row">
+            <div class="col-lg-1 hidden-md hidden-sm"></div>
+            <div class="col-lg-10 col-md-12 col-sm-12">
+                <form action="./php/logIn.php" method="post" class="row">
+                    <a class="col-md-6 col-sm-6 logIn_a" href="#">最新公告：【西部开源技术中心参加2015年西部教育论坛】</a>
+                    <div class="col-md-5 col-sm-5 logIn_input">
+                        <label for="#logIn_account">账号</label>
+                        <input type="text" id="#logIn_account" name="user_name" />
+                        <label for="#logIn_pwd">密码</label>
+                        <input type="password" id="#logIn_pwd" name="user_password" />
+                        <input type="submit" class="btn" name="login" value="登录" />
+                    </div>
+                    <div class="col-md-1 col-sm-1 logIn_logIn">
+                        <a href="./signIn.html">快速注册</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 hidden-md hidden-sm"></div>
+        </div>
+    </div>
+    <div class="col-lg-2 hidden-md hidden-sm"></div>
+</div>
+<div class="row index_edu">
+    <div class="col-lg-1 hidden-md hidden-sm"></div>
+    <div class="col-lg-10 col-md-12 col-sm-12">
+        <div class="row index_edu_span">
+            <span class="col-md-12" id="index_edu_span1">
+                Education教育培训
+            </span><br/>
+            <span class="col-md-12" id="index_edu_span2">
+                                          西部开源就业中心独创五大就业方向课程
+            </span><br/>
+            <span class="col-ms-12" id="index_edu_span3">
+                Linux系统运维工程师&nbsp;/&nbsp;Java&nbsp;EE工程师&nbsp;/&nbsp;C开发工程师&nbsp;/&nbsp;Android工程师&nbsp;/&nbsp;Web前端工程师
+            </span>
+        </div>
+        <div class="row index_edu_loop">
+        	<div class="col-md-1 col-sm-1"  style="height:224px;">
+        		<img id="edu_loop_left" src="images/main_wrapper_left.png" alt=""/>
+        	</div>
+            <div  class="col-md-10 col-sm-10" style="overflow: hidden">
+            	<ul>
+                <li class="pull-left"><img src="images/h-1.png" alt=""/></li>
+                <li class="pull-left"><img src="images/h-2.png" alt=""/></li>
+                <li class="pull-left"><img src="images/h-3.png" alt=""/></li>
+                <li  class="pull-left"><img src="images/h-4.png" alt=""/></li>
+            	</ul>
+            </div>
+            <div class="col-md-1 col-sm-1" style="height:224px;">
+            	<img id="edu_loop_right" src="images/main_wrapper_right.png" alt=""/>
+            </div>
+        </div>
+        <div class="row index_edu_info">
+            <div class="col-md-6 edu_info_left">
+                <div class="edu_info_left1">
+                    <div class="edu_news">
+                        <img src="images/news.png" alt=""/>
+                        <span>新闻</span>
+                    </div>
+                    <div class="edu_notice">
+                        <img src="images/notice.png">
+                        <span>公告</span>
+                    </div>
+                    <div class="edu_job">
+                        <img src="images/job.png" alt=""/>
+                        <span>招聘</span>
+                    </div>
+                </div>
+                <div class="edu_info_left2">
+                    <div class="edu_info_left2_1">
+                        <div class="edu_info_left2_img">
+                            <img src="images/pic.png" alt=""/>
+                        </div>
+                        <a href="#">更多新闻 <img src="images/more.png" alt=""/></a>
+                    </div>
+                    <div class="edu_info_left2_2">
+                        <ul>
+                            <li>
+                                <span>2015年11月11日</span>
+                                <p>西部开源技术中心毕业学员&nbsp;&nbsp;刘某某在网易双十一活动中，担任营销主管并成功组织了当天的活动。受到了各界人士的认可。</p>
+                            </li>
+                            <li>
+                                <span>2015年11月13日</span>
+                                <p>西部开源技术中心毕业学员&nbsp;&nbsp;刘某某在网易双十一活动中，担任营销主管并成功组织了当天的活动。受到了各界人士的认可。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="edu_info_left2" style="display: none">
+                    <div class="edu_info_left2_1">
+                        <div class="edu_info_left2_img">
+                            <img src="images/pic.png" alt=""/>
+                        </div>
+                        <a href="#">更多新闻 <img src="images/more.png" alt=""/></a>
+                    </div>
+                    <div class="edu_info_left2_2">
+                        <ul>
+                            <li>
+                                <span>2016年11月11日</span>
+                                <p>西部开源技术中心毕业学员&nbsp;&nbsp;刘某某在网易双十一活动中，担任营销主管并成功组织了当天的活动。受到了各界人士的认可。</p>
+                            </li>
+                            <li>
+                                <span>2016年11月13日</span>
+                                <p>西部开源技术中心毕业学员&nbsp;&nbsp;刘某某在网易双十一活动中，担任营销主管并成功组织了当天的活动。受到了各界人士的认可。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="edu_info_left2" style="display: none">
+                    <div class="edu_info_left2_1">
+                        <div class="edu_info_left2_img">
+                            <img src="images/pic.png" alt=""/>
+                        </div>
+                        <a href="#">更多新闻 <img src="images/more.png" alt=""/></a>
+                    </div>
+                    <div class="edu_info_left2_2">
+                        <ul>
+                            <li>
+                                <span>2017年11月11日</span>
+                                <p>西部开源技术中心毕业学员&nbsp;&nbsp;刘某某在网易双十一活动中，担任营销主管并成功组织了当天的活动。受到了各界人士的认可。</p>
+                            </li>
+                            <li>
+                                <span>2017年11月13日</span>
+                                <p>西部开源技术中心毕业学员&nbsp;&nbsp;刘某某在网易双十一活动中，担任营销主管并成功组织了当天的活动。受到了各界人士的认可。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 edu_info_right">
+                <div class="edu_info_right1">
+                    <div class="edu_info_right1_1">
+                        <img src="images/info.png" alt=""/>
+                        <span>就业信息</span>
+                    </div>
+                    <div class="edu_info_right1_2">
+                        <a>了解更多<img src="images/more.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="edu_info_right2" >
+                    <table class="table-responsive">
+                        <tr>
+                            <td><span>学员:</span>王佳</td>
+                            <td><span>毕业院校:</span>西安石油大学</td>
+                            <td><span>专业:</span>C开发工程师</td>
+                            <td><span>就业单位:</span>小米国际</td>
+                        </tr>
+                        <tr>
+                            <td><span>学员:</span>王佳</td>
+                            <td><span>毕业院校:</span>西安石油大学</td>
+                            <td><span>专业:</span>C开发工程师</td>
+                            <td><span>就业单位:</span>小米国际</td>
+                        </tr>
+                        <tr>
+                            <td><span>学员:</span>王佳</td>
+                            <td><span>毕业院校:</span>西安石油大学</td>
+                            <td><span>专业:</span>C开发工程师</td>
+                            <td><span>就业单位:</span>小米国际</td>
+                        </tr>
+                        <tr>
+                            <td><span>学员:</span>王佳</td>
+                            <td><span>毕业院校:</span>西安石油大学</td>
+                            <td><span>专业:</span>C开发工程师</td>
+                            <td><span>就业单位:</span>小米国际</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="edu_info_right3">
+                    <div class="edu_info_right3_1">
+                        <img src="images/comp.png" alt=""/>
+                        <span>企业案例</span>
+                    </div>
+                    <div class="edu_info_right3_2">
+                        <a>了解更多<img src="images/more.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="edu_info_right4">
+                    <div class="edu_info_right4_1">
+                        <div  class="edu_info_right4_img1" >
+                            <img src="images/comp-1.png" alt=""/>
+                        </div>
+                        <div class="edu_info_right4_ul1">
+                            <ul >
+                                <li><span>企业名称:</span>华为国际</li>
+                                <li><span>合作项目:</span>网络服务器优化项目</li>
+                                <li><span>项目简介:</span>华为技术有限公司是一家生产销售通讯设备的民营通信科技公司</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="edu_info_right4_2">
+                        <img class="edu_info_right4_img2" src="images/comp-2.png" alt=""/>
+                        <div class="edu_info_right4_ul2">
+                            <ul>
+                                <li><span>企业名称:</span>华为国际</li>
+                                <li><span>合作项目:</span>网络服务器优化项目</li>
+                                <li><span>项目简介:</span>华为技术有限公司是一家生产销售通讯设备的民营通信科技公司</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-1 hidden-md hidden-sm"></div>
+</div>
+<div class="row index_students">
+    <div class="col-lg-1 hidden-md hidden-sm"></div>
+    <div class="col-lg-10 col-md-12 col-sm-12">
+        <div class="row index_students_span">
+            <div class="col-md-12 index_students_span1">
+                <span>Students优秀学员</span>
+            </div>
+            <div class="col-md-12 index_students_span2">
+                <span>西部开源技术中心成功为多家优秀企业输送人才</span>
+            </div>
+            <div class="col-md-12 index_students_span3">
+                <span>百度&nbsp;/&nbsp;网易&nbsp;/&nbsp;腾讯&nbsp;/&nbsp;京东&nbsp;/&nbsp;阿里巴巴&nbsp;/&nbsp;小米&nbsp;/华为</span>
+            </div>
+        </div>
+        <div class="row index_students_loop">
+            <div class="col-md-1" id="students_loop_left">
+                <img  src="images/main_wrapper_left.png" alt=""/>
+            </div>
+            <div class="col-md-10 students_loop_ul" style="height: 280px;overflow: hidden;">
+                <ul style="width:138%;">
+                    <li>
+                        <img src="images/main_wrapper-1.png" alt="" /><br/>
+                        <span>学院姓名：刘梦</span><br/>
+                        <span>就业企业：阿里巴巴中国</span>
+                    </li>
+                    <li>
+                        <img src="images/main_wrapper-2.png" alt=""/><br/>
+                        <span>学院姓名：刘梦</span><br/>
+                        <span>就业企业：阿里巴巴中国</span>
+                    </li>
+                    <li>
+                        <img src="images/main_wrapper-3.png" alt=""/><br/>
+                        <span>学院姓名：刘梦</span><br/>
+                        <span>就业企业：阿里巴巴中国</span>
+                    </li>
+                    <li>
+                        <img src="images/main_wrapper-4.png" alt=""/><br/>
+                        <span>学院姓名：刘梦</span><br/>
+                        <span>就业企业：阿里巴巴中国</span>
+                    </li>
+                    <li>
+                        <img src="images/main_wrapper-5.png" alt=""/><br/>
+                        <span>学院姓名：刘梦</span><br/>
+                        <span>就业企业：阿里巴巴中国</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-1" id="students_loop_right">
+                <img  src="images/main_wrapper_right.png" style="float: right" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-1 hidden-md hidden-sm"></div>
+</div>
+<div class="row index_bottom1">
+    <div class="col-lg-1 hidden-md hidden-sm"></div>
+    <div class="col-lg-10 col-md-12 col-sm-12">
+        <div class="bottom1_1">合作企业</div>
+        <div class="bottom1_2">
+            <ul>
+                <li><a href="http://www.baidu.com/">百度中国</a></li>
+                <li><a href="http://www.sohu.com/">搜狐中国</a></li>
+                <li><a href="http://www.mi.com">小米国际</a></li>
+                <li><a href="http://www.1688.com">阿里巴巴</a></li>
+                <li><a href="http://www.huawei.com">华为国际</a></li>
+                <li><a href="http://www.tmall.com">天猫国际</a></li>
+                <li><a href="http://www.jg.com">京东商城</a></li>
+            </ul>
+        </div>
+        <div class="bottom1_3">更多合作企业></div>
+    </div>
+    <div class="col-lg-1 hidden-md hidden-sm"></div>
+</div>
+<div class="row index_bottom2">
+    <div class="col-md-12">
+        <img src="images/stubottom.gif" alt=""/>
+    </div>
+</div>
+</body>
+</html>

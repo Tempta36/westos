@@ -1,0 +1,220 @@
+html,
+head,
+body,
+div,
+p,
+table,
+tbody,
+tr,
+td,
+ul,
+li,
+ol {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.signIn {
+  background-color: #FEFEF4;
+}
+.signIn .top1 {
+  margin: 0;
+  width: 100%;
+  color: #A2A2A2;
+  height: 38px;
+  border-bottom: 2px solid #C0C0BE;
+  background-color: #EDEDED;
+  line-height: 38px;
+}
+.signIn .top1 .top1_left {
+  float: left;
+}
+.signIn .top1 .top1_right {
+  float: right;
+  text-align: right;
+}
+.signIn .top1 a {
+  text-decoration: none;
+  color: #A2A2A2;
+}
+.signIn .top2 {
+  width: 100%;
+  margin-left: 0;
+  background-color: #FEFEF4;
+}
+.signIn .top2 img {
+  width: 100%;
+  height: 10%;
+}
+.signIn .nav {
+  margin: 0;
+  width: 100%;
+  background-color: #A6B51C;
+  height: 45px;
+  padding: 0;
+}
+.signIn .nav .nav_ul1 {
+  padding: 0;
+  list-style: none;
+  width: 86%;
+  height: 100%;
+}
+.signIn .nav .nav_ul1 li {
+  float: left;
+  text-align: center;
+  width: 11%;
+}
+.signIn .nav .nav_ul1 li a {
+  color: white;
+  line-height: 45px;
+}
+.signIn .nav .nav_ul1 li a:hover {
+  text-decoration: none;
+}
+.signIn .nav .nav_ul2 {
+  width: 14%;
+  list-style: none;
+  float: right;
+}
+.signIn .nav .nav_ul2 li {
+  background-color: #A6B51C;
+}
+.signIn .nav .nav_ul2 #search_text {
+  width: 60%;
+  height: 26px;
+  border: 1px solid black;
+  float: left;
+  margin: 10px 5% 0 0;
+}
+.signIn .nav .nav_ul2 #search_btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #948822;
+  color: white;
+  float: left;
+  height: 26px;
+  margin-top: 10px;
+  width: 35%;
+}
+.signIn .index {
+  margin-top: 1%;
+}
+.signIn .index .index1 {
+  border-bottom: 2px solid #DFDEDA;
+  font-size: 24px;
+}
+.signIn .index .index1 .col-lg-12.col-md-12.col-sm-12 {
+  padding: 0px;
+}
+.signIn .index .index1 .col-lg-12.col-md-12.col-sm-12 span {
+  color: #A6B51C;
+}
+.signIn .index .index2 {
+  margin-top: 4%;
+}
+.signIn .index .index2 .index2_left .row label {
+  margin: 0;
+}
+.signIn .index .index2 .index2_left .row input {
+  border: 1px solid #707070;
+  border-radius: 3px;
+}
+.signIn .index .index2 .index2_left .row input[type='button'] {
+  background-color: #A6B51C;
+  border-radius: 0;
+  color: white;
+}
+.signIn .index .index2 .index2_left .row .btn_signIn {
+  height: 42px;
+  margin-top: 3%;
+}
+.signIn .index .index2 .index2_left .row .btn_signIn input {
+  height: 100%;
+}
+.signIn .index .index2 .index2_left .row .col-lg-4.col-md-4.col-sm-4 {
+  text-align: right;
+  height: 38px;
+  color: #7E7E7A;
+  padding: 0;
+}
+.signIn .index .index2 .index2_left .row .col-lg-8.col-md-8.col-sm-8 {
+  height: 38px;
+}
+.signIn .index .index2 .index2_left .row .col-lg-8.col-md-8.col-sm-8 input {
+  width: 100%;
+}
+.signIn .index .index2 .index2_left .row .noteCheck input:first-child {
+  width: 38% !important;
+}
+.signIn .index .index2 .index2_left .row .noteCheck input:last-child {
+  width: 58% !important;
+}
+.signIn .index .index2 .index2_left .row .tip1,
+.signIn .index .index2 .index2_left .row .tip2 {
+  font-size: 12px;
+  line-height: 14px;
+}
+.signIn .index .index2 .index2_left .row .tip1 input,
+.signIn .index .index2 .index2_left .row .tip2 input {
+  width: 12% !important;
+}
+.signIn .index .index2 .index2_right {
+  color: #4B4B4B;
+  padding: 10px 10px 10px 30px;
+}
+.signIn .index .index2 .index2_right p:nth-child(1) {
+  margin: 2% 0 3% 0;
+}
+.signIn .index .index2 .index2_right p:nth-child(1) span {
+  font-size: 20px;
+  margin: 0 26%;
+}
+.signIn .index_bottom1 {
+  height: 60px;
+  margin: 6% 0 0 0;
+  background-color: #948824;
+  text-align: center;
+  line-height: 60px;
+}
+.signIn .index_bottom1 .bottom1_1 {
+  background-color: #C5B52C;
+  color: #948824;
+  font-size: 26px;
+  float: left;
+  width: 14%;
+}
+.signIn .index_bottom1 .bottom1_2 {
+  float: left;
+  width: 60%;
+}
+.signIn .index_bottom1 .bottom1_2 li {
+  float: left;
+  list-style: none;
+  padding-left: 3%;
+}
+.signIn .index_bottom1 .bottom1_2 li a {
+  color: #FDFFFE;
+}
+.signIn .index_bottom1 .bottom1_3 {
+  color: #FDFFFE;
+  float: right;
+  width: 10%;
+}
+.signIn .index_bottom2 {
+  margin: 0;
+}
+.signIn .index_bottom2 .col-lg-12,
+.signIn .index_bottom2 .col-md-12,
+.signIn .index_bottom2 .col-sm-12 {
+  padding: 0;
+}
+.signIn .index_bottom2 .col-lg-12 img,
+.signIn .index_bottom2 .col-md-12 img,
+.signIn .index_bottom2 .col-sm-12 img {
+  width: 100%;
+}

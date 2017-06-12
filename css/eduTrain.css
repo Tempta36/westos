@@ -1,0 +1,349 @@
+html,
+head,
+body,
+div,
+p,
+table,
+tbody,
+tr,
+td,
+ul,
+li,
+ol {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.eduTrain {
+  background-color: #FEFEF4;
+}
+.eduTrain .top1 {
+  margin: 0;
+  width: 100%;
+  color: #A2A2A2;
+  height: 38px;
+  border-bottom: 2px solid #C0C0BE;
+  background-color: #EDEDED;
+  line-height: 38px;
+}
+.eduTrain .top1 .top1_left {
+  float: left;
+}
+.eduTrain .top1 .top1_right {
+  float: right;
+  text-align: right;
+}
+.eduTrain .top1 a {
+  text-decoration: none;
+  color: #A2A2A2;
+}
+.eduTrain .top2 {
+  width: 100%;
+  margin-left: 0;
+  background-color: #FEFEF4;
+}
+.eduTrain .top2 img {
+  width: 100%;
+  height: 10%;
+}
+.eduTrain .nav {
+  margin: 0;
+  width: 100%;
+  background-color: #A6B51C;
+  height: 45px;
+  padding: 0;
+}
+.eduTrain .nav .nav_ul1 {
+  padding: 0;
+  list-style: none;
+  width: 86%;
+  height: 100%;
+}
+.eduTrain .nav .nav_ul1 li {
+  float: left;
+  text-align: center;
+  width: 11%;
+}
+.eduTrain .nav .nav_ul1 li a {
+  color: white;
+  line-height: 45px;
+}
+.eduTrain .nav .nav_ul1 li a:hover {
+  text-decoration: none;
+}
+.eduTrain .nav .nav_ul2 {
+  width: 14%;
+  list-style: none;
+  float: right;
+}
+.eduTrain .nav .nav_ul2 li {
+  background-color: #A6B51C;
+}
+.eduTrain .nav .nav_ul2 #search_text {
+  width: 60%;
+  height: 26px;
+  border: 1px solid black;
+  float: left;
+  margin: 10px 5% 0 0;
+}
+.eduTrain .nav .nav_ul2 #search_btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #948822;
+  color: white;
+  float: left;
+  height: 26px;
+  margin-top: 10px;
+  width: 35%;
+}
+.eduTrain .eduTrain1 {
+  position: relative;
+  margin: 1% 0 0 0;
+  overflow: hidden;
+}
+.eduTrain .eduTrain1 .loop {
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+.eduTrain .eduTrain1 .loop #index_loop_left {
+  position: absolute;
+  width: 3.2%;
+  height: 100%;
+  z-index: 100;
+}
+.eduTrain .eduTrain1 .loop #index_loop_right {
+  position: absolute;
+  margin: 0 0 0  97%;
+  width: 3.2%;
+  height: 100%;
+  z-index: 100;
+}
+.eduTrain .eduTrain1 .loop ul {
+  width: 300%;
+  position: relative;
+  list-style: none;
+  height: auto;
+  overflow: hidden;
+}
+.eduTrain .eduTrain1 .loop ul img {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+}
+.eduTrain .eduTrain2 {
+  background-color: #E2E9C7;
+  color: #938723;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  text-align: center;
+}
+.eduTrain .eduTrain2 .span_style {
+  background-color: #BEC798;
+  cursor: pointer;
+  display: block;
+  font-size: 30px;
+  height: 100%;
+  width: 10%;
+  position: relative;
+}
+.eduTrain .eduTrain2 #course_left {
+  float: left;
+  background-color: #BEC798;
+  cursor: pointer;
+  display: block;
+  font-size: 30px;
+  height: 100%;
+  width: 10%;
+  position: relative;
+}
+.eduTrain .eduTrain2 #course_right {
+  float: left;
+  background-color: #BEC798;
+  cursor: pointer;
+  display: block;
+  font-size: 30px;
+  height: 100%;
+  width: 10%;
+  position: relative;
+}
+.eduTrain .eduTrain2 #course_left:hover,
+.eduTrain .eduTrain2 #course_right:hover {
+  color: white;
+}
+.eduTrain .eduTrain2 .course_list {
+  position: relative;
+  float: left;
+  width: 80%;
+  overflow: hidden;
+}
+.eduTrain .eduTrain2 .course_list ul {
+  left: 0;
+  position: relative;
+  width: 154%;
+}
+.eduTrain .eduTrain2 .course_list ul li {
+  list-style: none;
+  float: left;
+  font-weight: bold;
+  height: 50px;
+  width: 16.5%;
+}
+.eduTrain .eduTrain2 #search_course,
+.eduTrain .eduTrain2 #course_btn {
+  margin-top: 1%;
+  line-height: 35px;
+  height: 35px;
+}
+.eduTrain .eduTrain2 #course_btn {
+  background-color: #BEC896;
+  color: white;
+  border-style: none;
+}
+.eduTrain .eduTrain3 {
+  background-color: #EBEBEB;
+  color: #919191;
+  line-height: 30px;
+  margin: 0;
+  height: 30px;
+}
+.eduTrain .eduTrain3 > .col-lg-8,
+.eduTrain .eduTrain3 .col-md-12,
+.eduTrain .eduTrain3 .col-sm-12 > .row > .col-lg-7,
+.eduTrain .eduTrain3 .col-md-7,
+.eduTrain .eduTrain3 .col-sm-7 {
+  position: relative;
+  padding: 0;
+  height: 30px;
+}
+.eduTrain .eduTrain3 .eduTrain3_ul {
+  position: absolute;
+  width: 100%;
+}
+.eduTrain .eduTrain3 .eduTrain3_ul li {
+  cursor: pointer;
+  float: left;
+  list-style: none;
+  text-align: center;
+  white-space: nowrap;
+  width: 33%;
+}
+.eduTrain .eduTrain3 .eduTrain3_ul li:hover {
+  text-decoration: underline;
+}
+.eduTrain .eduTrain3 .eduTrain3_ul:not(.eduTrain3_ul_block) {
+  display: none;
+}
+.eduTrain .eduTrain4 {
+  margin: 1% 0 0 0;
+}
+.eduTrain .eduTrain4 .eduTrain4_left {
+  position: relative;
+}
+.eduTrain .eduTrain4 .eduTrain4_left .eduTrain4_left_content {
+  border: 1px solid #C7D298;
+  margin: 0;
+  padding: 10px 30px;
+  position: absolute;
+  width: 96%;
+}
+.eduTrain .eduTrain4 .eduTrain4_left .eduTrain4_left_content span {
+  display: block;
+  font-size: 20px;
+  margin-top: 2%;
+}
+.eduTrain .eduTrain4 .eduTrain4_left .eduTrain4_left_content p {
+  margin-top: 3%;
+}
+.eduTrain .eduTrain4 .eduTrain4_left .eduTrain4_left_content table {
+  border-collapse: collapse;
+  margin-top: 5%;
+  text-align: center;
+  width: 100%;
+}
+.eduTrain .eduTrain4 .eduTrain4_left .eduTrain4_left_content table th {
+  font-size: 20px;
+  font-weight: 300;
+}
+.eduTrain .eduTrain4 .eduTrain4_left .eduTrain4_left_content table td {
+  border: 1px solid black;
+}
+.eduTrain .eduTrain4 .eduTrain4_left .eduTrain4_left_content:not(.display_block) {
+  display: none;
+}
+.eduTrain .eduTrain4 .eduTrain4_right > div {
+  width: 96%;
+  float: right;
+}
+.eduTrain .eduTrain4 .eduTrain4_right .eduTrain4_right1 div:first-child,
+.eduTrain .eduTrain4 .eduTrain4_right .eduTrain4_right2 div:first-child,
+.eduTrain .eduTrain4 .eduTrain4_right .eduTrain4_right3 div:first-child {
+  background-color: #A6B51C;
+  color: white;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.eduTrain .eduTrain4 .eduTrain4_right .eduTrain4_right1 div:last-child,
+.eduTrain .eduTrain4 .eduTrain4_right .eduTrain4_right2 div:last-child,
+.eduTrain .eduTrain4 .eduTrain4_right .eduTrain4_right3 div:last-child {
+  padding: 4%;
+  color: #686868;
+  border-left: 1px solid #B9C77C;
+  border-right: 1px solid #B9C77C;
+  border-bottom: 1px solid #B9C77C;
+}
+.eduTrain .eduTrain4 .eduTrain4_right .eduTrain4_right2,
+.eduTrain .eduTrain4 .eduTrain4_right .eduTrain4_right3 {
+  margin-top: 4%;
+}
+.eduTrain .index_bottom1 {
+  height: auto;
+  margin: 6% 0 0 0;
+  background-color: #948824;
+  text-align: center;
+  line-height: 60px;
+}
+.eduTrain .index_bottom1 .bottom1_1 {
+  background-color: #C5B52C;
+  color: #948824;
+  font-size: 26px;
+  float: left;
+  width: 14%;
+}
+.eduTrain .index_bottom1 .bottom1_2 {
+  float: left;
+  width: 70%;
+}
+.eduTrain .index_bottom1 .bottom1_2 li {
+  color: #FDFFFE;
+  float: left;
+  list-style: none;
+  padding-left: 3%;
+}
+.eduTrain .index_bottom1 .bottom1_3 {
+  color: #FDFFFE;
+  float: right;
+  width: 12%;
+}
+.eduTrain .index_bottom2 {
+  margin: 0;
+}
+.eduTrain .index_bottom2 .col-lg-12,
+.eduTrain .index_bottom2 .col-md-12,
+.eduTrain .index_bottom2 .col-sm-12 {
+  padding: 0;
+}
+.eduTrain .index_bottom2 .col-lg-12 img,
+.eduTrain .index_bottom2 .col-md-12 img,
+.eduTrain .index_bottom2 .col-sm-12 img {
+  width: 100%;
+}

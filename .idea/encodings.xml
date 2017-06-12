@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/css/aboutUs.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/connectUs.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/signIn.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/student.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/student.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/techSupport.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/aboutUs.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/connectUS.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/signIn.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/student.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/techSupport.js" charset="UTF-8" />
+  </component>
+</project>
