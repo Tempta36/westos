@@ -29,13 +29,13 @@ $(document).ready(function(){
         var tmp=0;
         var timer=setInterval(function(){
             tmp=-parseInt(width)+parseInt(tmp)+'px';
-            loop.animate({left:tmp},1000,'linear',function(){
+            loop.animate({left:tmp},2000,'linear',function(){
                 if(parseInt(loop.css('left'))==-parseInt(width)*2){
                     loop.css('left',0);
                     tmp=0;
                 }
             });
-        },3000);
+        },6000);
 
         left.hover(function(){
             clearInterval(timer);
@@ -45,18 +45,18 @@ $(document).ready(function(){
                 }else{
                     tmp=parseInt(tmp)-parseInt(width)+'px';
                 }
-                loop.animate({left:tmp},1000,'linear');
+                loop.animate({left:tmp},2000,'linear');
             });
         },function(){
             timer=setInterval(function(){
                 tmp=-parseInt(width)+parseInt(tmp)+'px';
-                loop.animate({left:tmp},1000,'linear',function(){
+                loop.animate({left:tmp},2000,'linear',function(){
                     if(parseInt(loop.css('left'))==-parseInt(width)*2){
                         loop.css('left',0);
                         tmp=0;
                     }
                 });
-            },3000);
+            },6000);
         });
 
         right.hover(function(){
@@ -67,18 +67,18 @@ $(document).ready(function(){
                 }else{
                     tmp=parseInt(tmp)+parseInt(width)+'px';
                 }
-                loop.animate({left:tmp},1000,'linear');
+                loop.animate({left:tmp},2000,'linear');
             });
         },function(){
             timer=setInterval(function(){
                 tmp=-parseInt(width)+parseInt(tmp)+'px';
-                loop.animate({left:tmp},1000,'linear',function(){
+                loop.animate({left:tmp},2000,'linear',function(){
                     if(parseInt(loop.css('left'))==-parseInt(width)*2){
                         loop.css('left',0);
                         tmp=0;
                     }
                 });
-            },3000);
+            },6000);
         });
     }
 
@@ -178,7 +178,7 @@ $(document).ready(function(){
         var i=loop.offset().left;
         loop.html(loop.html()+loop.html());
         loop.css('width',width);
-        var images=$('.students_loop_ul img');
+        var lis=$('.students_loop_ul li');
 
         timer=setInterval(function(){
             if(parseInt(loop.css('left'))>=(-parseInt(width)/2)){
@@ -188,10 +188,10 @@ $(document).ready(function(){
             }
         },30);
 
-        $(images).each(function(){
+        $(lis).each(function(){
             $(this).hover(function(){
                 clearInterval(timer);
-                $(this).css('transform','scale(1.05)');
+                $(this).css('transform','scale(1.01)');
             },function(){
                 timer=setInterval(function(){
                     if(parseInt(loop.css('left'))>=(-parseInt(width)/2)){
@@ -238,6 +238,21 @@ $(document).ready(function(){
             },30);
         });
     }
+
+    //登录表单的验证
+    $('.logIn #login').click(function(){
+        var obj=$(this);
+        $.ajax({
+            url:'logIn.php',
+            type:'GET',
+            async:false,
+            success:function(result){
+                alert(result);
+            }
+        });
+    });
+
+    
 });
 
 

@@ -29,9 +29,9 @@ class Login
 		}elseif (empty($_POST['user_password'])) {
 			$this->errors[] = "Password field was empty.";
 		}elseif (!empty($_POST['user_name']) && !empty($_POST['user_password'])) {
-			//建立与mysql数据库服务器的连接
+			//建立与mysql数据库服务器的连接s
 			$this->db_connection = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_NAME);
-			$this->tmp[]='conneting database of login is success';
+			$this->tmp[]='conneting database of westos is success';
 			//数据库输出编码
 			if(!$this->db_connection->set_charset("utf8")){
 				$this->errors[]=$this->db_connection->error;
@@ -43,28 +43,36 @@ class Login
 				//将表单提交的用户名进行特殊字符转义
 				$user_name = $this->db_connection->real_escape_string($_POST['user_name']);
 				$this->tmp[]=$user_name;
+				$this->tmp[]=$_POST['user_password'];
 
 				//定义需要在数据库中查找与用户名相同的user_name和user_password
 				$sql="SELECT user_name,user_password_hash
-					  FROM DB_NAME
+					  FROM ".'users'."
 					  WHERE user_name='".$user_name."';";
 
 				//在数据库中查询	  
 				$result_of_login_check=$this->db_connection->query($sql);
-				$this->tmp[]=$result_of_login_check;
+				$this->tmp[8]=$result_of_login_check;
 
 				//数据库匹配到唯一的结果集
 				if($result_of_login_check->num_rows == 1){
 
 					//存放结果集中当前行的数据
 					$result_row=$result_of_login_check->fetch_object();
-
-					//校验密码是否和哈希值匹配
-					if(password_verify($_POST['user_password'],$result_row->user_password_hash)){
-						$_SESSION['user_name']=$result_row->user_name;
-						$_SESSION['user_login_status']=1;
+					$this->tmp[11]=$result_row;
+					$pwd_sql="select password(".$_POST['user_password'].")";
+					$pwd_res=mysql_query($pwd_sql);
+					if($pwd_row=mysql_fetch_row($pwd_res)){
+						$pwd_encode=$pwd_row[0];
+						//校验密码是否和哈希值匹配
+						if($pwd_encode == $result_row->user_password_hash){
+							$_SESSION['user_name']=$result_row->user_name;
+							$_SESSION['user_login_status']=1;
+						}else{
+							$this->errors[]='Wrong password.Try again.';
+						}
 					}else{
-						$this->errors[]='Wrong password.Try again.';
+						$this->errors[]='Password is wrong.';
 					}
 				}else{
 					$this->errors[]='This user does not exits.';
@@ -94,10 +102,18 @@ class Login
 }
 
 $login = new Login();
-var_dump($login->tmp);
+//print_r($login->errors);
+//echo "<br>";
+//print_r($_SESSION);
+//echo "<br>";
 if($login->isUserLoggedIn() == true){
-	echo "<script>alert('you have been logged in.');</script>";
+	echo "<script>
+	
+		window.location.href='../student.html';
+		</script>";
 }else{
-
+	echo "<script>
+		alert('".$login->errors[0]."');
+		window.location.href='../student.html';</script>";
 }
 ?>
